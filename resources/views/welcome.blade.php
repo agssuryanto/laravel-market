@@ -49,7 +49,7 @@
                     <button class="btn btn-outline-secondary mr-3" type="button" id="button-addon2" style="font-size: 24px; border: none !important;"><ion-icon name="cart"></ion-icon></button>
                     <span  style="font-size: 24px; font-weight: 100;">|<span>
                     <button class="btn btn-outline-success mx-2 my-2 my-sm-0" type="submit">Masuk</button>
-                    <button class="btn btn-success mx-2 my-2 my-sm-0" type="submit">Daftar</button>
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Daftar</button>
                 </form>                
             </div>        
         </div>

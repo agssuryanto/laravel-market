@@ -33,6 +33,10 @@ button#button-addon2 {
 
 @media (min-width: 992px) {
 
+    nav {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
     .navbar-search {
         width: 500px !important;
     }
