@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="{{ asset('/images/logo.png') }}" alt="Logo" class="logo">
@@ -40,7 +40,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control navbar-search" placeholder="Cari Barang" aria-label="Cari Barang" aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="font-size: 18px;"><ion-icon name="search"></ion-icon></button>
+                            <button class="btn btn-outline-secondary bg-light" type="button" id="button-addon2" style="font-size: 18px;"><ion-icon name="search"></ion-icon></button>
                         </div>
                     </div>
                 </ul>
