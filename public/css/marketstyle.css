@@ -1,0 +1,28 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+.btn {
+    line-height: 1rem !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.logo {
+    max-height: 32px;
+}
+
+.form-control {
+    font-size: 12px;
+}
+
+button#button-addon2 {
+    line-height: 1rem !important;
+    height: 2rem !important;
+}
+
+.navbar-search {
+    width: 500px !important;
+}
