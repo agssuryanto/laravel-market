@@ -24,5 +24,19 @@ button#button-addon2 {
 }
 
 .navbar-search {
-    width: 500px !important;
+    max-width: 500px !important;
 }
+
+@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) {
+
+    .navbar-search {
+        width: 500px !important;
+    }
+    
+}
+
+@media (min-width: 1200px) { ... }
