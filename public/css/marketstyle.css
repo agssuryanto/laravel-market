@@ -27,6 +27,24 @@ button#button-addon2 {
     max-width: 500px !important;
 }
 
+.category-carousel-box {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.category-carousel-box img {
+    display:block;
+    margin:auto;
+}
+
+.category-carousel-box h6 {
+    text-align: center;
+    font-size: 12px;
+}
+
 @media (min-width: 576px) { 
     /* */
 }

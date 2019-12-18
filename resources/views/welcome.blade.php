@@ -60,7 +60,7 @@
     </nav>
 
     <div class="container my-3">
-        <div class="owl-carousel">
+        <div class="slider owl-carousel">
             <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide1.jpg') }}"></div>
             <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide2.jpg') }}"></div>
             <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide3.jpg') }}"></div>
@@ -72,7 +72,51 @@
     <div class="container my-3 px-4">
         <div class="row" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;">
             <div class="col-md-6 pt-2">
-                <h5>Kategori</h5>
+                <h5>Kategori Pilihan</h5>
+                <div class="category owl-carousel">
+                    <div>
+                        <div class="category-carousel-box">
+                            <img style="width: 48px;" src="{{ asset('/images/product_category/accesories_icon.jpeg') }}">
+                            <div class="clearfix">&nbsp;</div>
+                            <h6>Accesories</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="category-carousel-box">
+                            <img style="width: 48px;" src="{{ asset('/images/product_category/craft_icon.png') }}">
+                            <div class="clearfix">&nbsp;</div>
+                            <h6>Craft</h6>
+                        </div>
+                    </div>                    
+                    <div>
+                        <div class="category-carousel-box">
+                            <img style="width: 48px;" src="{{ asset('/images/product_category/drink_icon.jpg') }}">
+                            <div class="clearfix">&nbsp;</div>
+                            <h6>Drink</h6>
+                        </div>
+                    </div>                                        
+                    <div>
+                        <div class="category-carousel-box">
+                            <img style="width: 48px;" src="{{ asset('/images/product_category/fashion_icon.jpg') }}">
+                            <div class="clearfix">&nbsp;</div>
+                            <h6>Fashion</h6>
+                        </div>
+                    </div>                                                            
+                    <div>
+                        <div class="category-carousel-box">
+                            <img style="width: 48px;" src="{{ asset('/images/product_category/food_icon.png') }}">
+                            <div class="clearfix">&nbsp;</div>
+                            <h6>Food</h6>
+                        </div>
+                    </div>                                                                                
+                    <div>
+                        <div class="category-carousel-box">
+                            <img style="width: 48px;" src="{{ asset('/images/product_category/furniture_icon.png') }}">
+                            <div class="clearfix">&nbsp;</div>
+                            <h6>Furniture</h6>
+                        </div>
+                    </div>                                                                                                    
+                </div>                
             </div>
             <div class="col-md-6 pt-2">
                 <h5>Topup & PPOB</h5>
@@ -91,7 +135,7 @@
 
     <script>
         $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
+            $('.slider').owlCarousel({
                 center: true,
                 items:3,
                 loop:true,
@@ -108,19 +152,16 @@
                 }
             });
 
-            $('.owl-category').owlCarousel({
-                center: true,
+            $('.category').owlCarousel({
                 items:4,
                 loop:true,
-                margin:10,
                 autoplay: true,
                 responsive:{
                     0: {
-                        items: 1
+                        items: 3
                     },
                     600:{
-                        items:2,
-                        margin: 15
+                        items:4,
                     }
                 }
             });            
