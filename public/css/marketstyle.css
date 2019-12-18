@@ -27,15 +27,13 @@ button#button-addon2 {
     max-width: 500px !important;
 }
 
-.owl-item.active.center {
-    width: 600px !important;
-    overflow: visible !important;
+@media (min-width: 576px) { 
+    /* */
 }
 
-
-@media (min-width: 576px) { ... }
-
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+    /* */
+}
 
 @media (min-width: 992px) {
 
