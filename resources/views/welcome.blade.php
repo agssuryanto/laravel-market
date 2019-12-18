@@ -4,11 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('/owlcarousel/dist/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/owlcarousel/dist/assets/owl.theme.default.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('/css/marketstyle.css?v=1.0') }}">
     <title>{{ config('app.name') }}</title>
@@ -18,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('/images/logo.png') }}" alt="Logo" class="logo">
+                <img src="{{ asset('/images/funstore-white.jpg') }}" alt="Logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +57,17 @@
         </div>
     </nav>
 
-    <div class="container my-5">
+    <div class="container my-3">
+        <div class="dflex row owl-carousel">
+            <div style="width: 600px !important;"><img style="width: 600px;" src="{{ asset('/images/slider/slide1.jpg') }}"></div>
+            <div><img style="width: 600px;" src="{{ asset('/images/slider/slide2.jpg') }}"></div>
+            <div><img style="width: 600px;" src="{{ asset('/images/slider/slide3.jpg') }}"></div>
+            <div><img style="width: 600px;" src="{{ asset('/images/slider/slide4.jpg') }}"></div>
+            <div><img style="width: 600px;" src="{{ asset('/images/slider/slide5.jpg') }}"></div>
+        </div>
+    </div>
+
+    <div class="container my-3">
         <!--Carousel Wrapper-->
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -232,5 +244,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="{{ asset('/owlcarousel/dist/owl.carousel.min.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                items:1,
+                loop:true,
+                margin:30,
+                autoplay: true,
+                responsive:{
+                    600:{
+                        items:5
+                    }
+                }
+            });
+        });
+    </script>
+
   </body>
 </html>
