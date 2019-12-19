@@ -71,7 +71,7 @@
 
     <div class="container my-3 px-4">
         <div class="row" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;">
-            <div class="col-md-6 pt-2">
+            <div class="col-md-6 pt-2" style="background-color: #ffffff;">
                 <h5>&nbsp;Kategori Pilihan</h5>
                 <div class="category owl-carousel owl-theme">
                     <div>
@@ -118,8 +118,97 @@
                     </div>                                                                                                    
                 </div>                
             </div>
-            <div class="col-md-6 pt-2">
+            <div class="col-md-6 pt-2" style="background-color: #ffffff;">
                 <h5>&nbsp;Topup & PPOB</h5>
+                <ul class="nav nav-pills nav-fill" style="border: 1px solid rgba(0,0,0,0.1); ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Pulsa" data-toggle="tab">Pulsa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Paketdata" data-toggle="tab">Paket Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ListrikPLN" data-toggle="tab">Listrik PLN</a>
+                    </li>
+                </ul>                
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="Pulsa">
+                        <div class="container">
+                            <form>
+                                <div class="d-flex row">
+                                    <div class="form-group mx-2">
+                                        <label for="notelp">Nomor Telepon</label>
+                                        <input type="text" class="form-control" id="notelp" aria-describedby="notelp" placeholder="081234567890">
+                                    </div>
+                                    <div class="form-group mx-2">
+                                        <label for="nominal">Nominal</label>
+                                        <input type="text" class="form-control" id="nominal" placeholder="nominal">
+                                    </div>
+                                    <div class="form-group">
+                                        <br />
+                                        <button type="submit" class="btn btn-primary mt-2">Bayar</button>
+                                    </div>                                    
+                                </div>
+                            </form>          
+                        </div>              
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="Paketdata">
+                        <div class="container">
+                            <form>
+                                <div class="d-flex row">
+                                    <div class="form-group mx-2">
+                                        <label for="notelp">Nomor Telepon</label>
+                                        <input type="text" class="form-control" id="notelpdata" aria-describedby="notelp" placeholder="081234567890">
+                                    </div>
+                                    <div class="form-group mx-2">
+                                        <label for="nominal">Nominal</label>
+                                        <input type="text" class="form-control" id="nominaldata" placeholder="nominal">
+                                    </div>
+                                    <div class="form-group">
+                                        <br />
+                                        <button type="submit" class="btn btn-primary mt-2">Bayar</button>
+                                    </div>                                    
+                                </div>
+                            </form>          
+                        </div>                                     
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="ListrikPLN">
+                        <div class="container">
+                            <form>
+                                <div class="d-flex row">
+                                    <div class="form-group mx-2">
+                                        <label for="notelp">Jenis Produk Listrik</label>
+                                        <select class="form-control" id="produk_listrik" name="produk_listrik">
+                                            <option value="token">Token Listrik</option>
+                                            <option value="tagihan">Tagihan Listrik</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mx-2">
+                                        <label for="notelp">ID Meter / Pelanggan</label>
+                                        <input type="text" class="form-control" id="idpelanggan" aria-describedby="idpelanggan" placeholder="1122334455">
+                                    </div>
+                                    <div class="form-group mx-2">
+                                        <label for="nominal">Nominal</label>
+                                        <select class="form-control" id="nominal_listrik" name="nominal_listrik">
+                                            <option value="10000">Rp 10.000</option>
+                                            <option value="20000">Rp 20.000</option>
+                                            <option value="25000">Rp 25.000</option>
+                                            <option value="50000">Rp 50.000</option>
+                                            <option value="100000">Rp 100.000</option>
+                                            <option value="200000">Rp 200.000</option>
+                                            <option value="500000">Rp 500.000</option>
+                                            <option value="1000000">Rp 1.000.000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <br />
+                                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                                    </div>                                    
+                                </div>
+                            </form>          
+                        </div>                                      
+                    </div>
+                </div>
             </div>
         </div>
     </div>
