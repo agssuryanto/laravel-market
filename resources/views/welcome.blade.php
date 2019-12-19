@@ -11,7 +11,6 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/owlcarousel/dist/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/owlcarousel/dist/assets/owl.theme.default.min.css') }}">
-
     <link rel="stylesheet" href="{{ asset('/css/marketstyle.css?v=1.0') }}">
     <title>{{ config('app.name') }}</title>
   </head>
@@ -60,19 +59,20 @@
     </nav>
 
     <div class="container my-3">
-        <div class="slider owl-carousel">
-            <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide1.jpg') }}"></div>
-            <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide2.jpg') }}"></div>
-            <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide3.jpg') }}"></div>
-            <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide4.jpg') }}"></div>
-            <div><img style="border-radius: 10px;" src="{{ asset('/images/slider/slide5.jpg') }}"></div>
+        <div class="slider owl-carousel owl-theme">
+            <div><img src="{{ asset('/images/slider/slide1.jpg') }}"></div>
+            <div><img src="{{ asset('/images/slider/slide2.jpg') }}"></div>
+            <div><img src="{{ asset('/images/slider/slide3.jpg') }}"></div>
+            <div><img src="{{ asset('/images/slider/slide4.jpg') }}"></div>
+            <div><img src="{{ asset('/images/slider/slide5.jpg') }}"></div>
+            <div><img src="{{ asset('/images/slider/slide6.jpg') }}"></div>
         </div>
     </div>
 
     <div class="container my-3 px-4">
         <div class="row" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;">
             <div class="col-md-6 pt-2">
-                <h5>Kategori Pilihan</h5>
+                <h5>&nbsp;Kategori Pilihan</h5>
                 <div class="category owl-carousel">
                     <div>
                         <div class="category-carousel-box">
@@ -119,7 +119,7 @@
                 </div>                
             </div>
             <div class="col-md-6 pt-2">
-                <h5>Topup & PPOB</h5>
+                <h5>&nbsp;Topup & PPOB</h5>
             </div>
         </div>
     </div>
@@ -137,10 +137,13 @@
         $(document).ready(function(){
             $('.slider').owlCarousel({
                 center: true,
-                items:3,
+                items:6,
                 loop:true,
                 margin:10,
                 autoplay: true,
+                nav: true,
+                navText: ['<ion-icon name="arrow-dropleft"></ion-icon>','<ion-icon name="arrow-dropright"></ion-icon>'],
+                dots: true,
                 responsive:{
                     0: {
                         items: 1

@@ -27,8 +27,40 @@ button#button-addon2 {
     max-width: 500px !important;
 }
 
+.owl-prev {
+    left: -30px;
+    font-size: 48px !important;
+    opacity: 0 !important;
+}
+
+.owl-next {
+    right: -30px;
+    font-size: 48px !important;
+    opacity: 0 !important;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 30%;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 60px;
+    color: #787878;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color: transparent;
+    color: #237277;
+    opacity: 1 !important;
+}
+
+.owl-item img {
+    border-radius: 5px;
+}
+
 .category-carousel-box {
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0s.1);
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
