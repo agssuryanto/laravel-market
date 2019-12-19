@@ -73,7 +73,7 @@
         <div class="row" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;">
             <div class="col-md-6 pt-2">
                 <h5>&nbsp;Kategori Pilihan</h5>
-                <div class="category owl-carousel">
+                <div class="category owl-carousel owl-theme">
                     <div>
                         <div class="category-carousel-box">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/accesories_icon.jpeg') }}">
@@ -159,6 +159,9 @@
                 items:4,
                 loop:true,
                 autoplay: true,
+                nav: true,
+                navText: ['<ion-icon name="arrow-dropleft"></ion-icon>','<ion-icon name="arrow-dropright"></ion-icon>'],
+                dots: false,
                 responsive:{
                     0: {
                         items: 3

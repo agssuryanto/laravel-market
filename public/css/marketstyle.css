@@ -27,19 +27,19 @@ button#button-addon2 {
     max-width: 500px !important;
 }
 
-.owl-prev {
+.slider .owl-prev {
     left: -30px;
     font-size: 48px !important;
     opacity: 0 !important;
 }
 
-.owl-next {
+.slider .owl-next {
     right: -30px;
     font-size: 48px !important;
     opacity: 0 !important;
 }
 
-.owl-prev, .owl-next {
+.slider .owl-prev, .slider .owl-next {
     position: absolute;
     top: 30%;
 }
@@ -59,8 +59,23 @@ button#button-addon2 {
     border-radius: 5px;
 }
 
+.category .owl-prev {
+    left: -25px;
+    font-size: 32px !important;
+}
+
+.category .owl-next {
+    right: -25px;
+    font-size: 32px !important;
+}
+
+.category .owl-prev, .category .owl-next {
+    position: absolute;
+    top: 30%;
+}
+
 .category-carousel-box {
-    border: 1px solid rgba(0,0,0,0s.1);
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
