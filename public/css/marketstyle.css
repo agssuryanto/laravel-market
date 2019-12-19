@@ -3,6 +3,14 @@ body {
     font-size: 12px;
 }
 
+input[type="text"].form-control:focus {
+    box-shadow: none !important;
+}
+
+button.btn:focus {
+    box-shadow: none !important;
+}
+
 .btn {
     line-height: 1rem !important;
     font-size: 12px;
@@ -44,6 +52,10 @@ button#button-addon2 {
     top: 30%;
 }
 
+button.owl-prev:focus, button.owl-next:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 .owl-prev span, .owl-next span {
     font-size: 60px;
     color: #787878;
