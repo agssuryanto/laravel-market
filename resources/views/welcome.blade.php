@@ -62,12 +62,10 @@
     </nav>
     
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <div class="d-flex row">
-            <span style="display: flex; align-items: center; justify-content: center; font-size: 28px; color: green;">
-                <i class="fas fa-shopping-cart"></i>
-                <font size="2px">&nbsp;Mau belanja murah ?&nbsp;<a href="#">Masuk aja dulu</a></strong></font>
-            </span>            
-        </div>
+        <span style="display: flex; align-items: center; justify-content: center; font-size: 28px; color: green;">
+            <i class="fas fa-shopping-cart"></i>
+            <font size="2px">&nbsp;Mau belanja murah ?&nbsp;<a href="#">Masuk aja dulu</a></strong></font>
+        </span>            
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
