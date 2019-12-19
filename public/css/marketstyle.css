@@ -3,6 +3,31 @@ body {
     font-size: 12px;
 }
 
+.bg-white {
+    background-color: white !important;
+}
+
+.alert.alert-warning {
+    position: absolute;
+    margin-top: 10px;
+    right: 20%;
+    font-family: Arial;
+    z-index: 100;
+}
+
+.alert.alert-success {
+    position: absolute;
+    width: 100%;
+    margin-top: 15px;
+    font-family: Arial;
+    z-index: 10;
+}
+
+.alert a, a:hover {
+    color: black;
+    font-weight: 900;
+}
+
 input[type="text"].form-control:focus {
     box-shadow: none !important;
 }
@@ -97,6 +122,7 @@ button.owl-prev:focus, button.owl-next:focus {
 .category-carousel-box img {
     display:block;
     margin:auto;
+    padding: auto;
 }
 
 .category-carousel-box h6 {
@@ -144,6 +170,10 @@ li.nav-item > a.nav-link.active {
         width: 500px !important;
     }
     
+    .alert.alert-warning {
+        right: 60px;
+    }
+
 }
 
 @media (min-width: 1200px) { ... }

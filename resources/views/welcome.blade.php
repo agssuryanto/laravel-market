@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +57,22 @@
             </div>        
         </div>
     </nav>
+    
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <ion-icon name="cart"></ion-icon>&nbsp;Mau belanja?&nbsp;<font size="2px"><font weight="bold"><strong><a href="#">Masuk aja dulu</a></strong></font></font>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
-    <div class="container my-3">
+    {{-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Mau belanja?&nbsp;<font size="2px"><font weight="bold"><strong><a href="#">Masuk aja dulu</a></strong></font></font>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> --}}
+
+    <div class="container mt-5 pt-5">
         <div class="slider owl-carousel owl-theme">
             <div><img src="{{ asset('/images/slider/slide1.jpg') }}"></div>
             <div><img src="{{ asset('/images/slider/slide2.jpg') }}"></div>
@@ -75,45 +89,45 @@
                 <h5>&nbsp;Kategori Pilihan</h5>
                 <div class="category owl-carousel owl-theme">
                     <div>
-                        <div class="category-carousel-box">
+                        <div class="category-carousel-box pt-2">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/accesories_icon.jpeg') }}">
                             <div class="clearfix">&nbsp;</div>
                             <h6>Accesories</h6>
                         </div>
                     </div>
                     <div>
-                        <div class="category-carousel-box">
+                        <div class="category-carousel-box pt-2">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/craft_icon.png') }}">
                             <div class="clearfix">&nbsp;</div>
                             <h6>Craft</h6>
                         </div>
                     </div>                    
                     <div>
-                        <div class="category-carousel-box">
+                        <div class="category-carousel-box pt-2">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/drink_icon.jpg') }}">
                             <div class="clearfix">&nbsp;</div>
-                            <h6>Drink</h6>
+                            <h6>Drink</h6>                       
                         </div>
                     </div>                                        
                     <div>
-                        <div class="category-carousel-box">
+                        <div class="category-carousel-box pt-2">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/fashion_icon.jpg') }}">
                             <div class="clearfix">&nbsp;</div>
-                            <h6>Fashion</h6>
+                            <h6>Fashion</h6>                      
                         </div>
                     </div>                                                            
                     <div>
-                        <div class="category-carousel-box">
+                        <div class="category-carousel-box pt-2">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/food_icon.png') }}">
                             <div class="clearfix">&nbsp;</div>
-                            <h6>Food</h6>
+                            <h6>Food</h6>                     
                         </div>
                     </div>                                                                                
                     <div>
-                        <div class="category-carousel-box">
+                        <div class="category-carousel-box pt-2">
                             <img style="width: 48px;" src="{{ asset('/images/product_category/furniture_icon.png') }}">
                             <div class="clearfix">&nbsp;</div>
-                            <h6>Furniture</h6>
+                            <h6>Furniture</h6>                     
                         </div>
                     </div>                                                                                                    
                 </div>                
@@ -215,10 +229,16 @@
 
 
     <!-- FOOTER -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="{{ asset('/images/funstore-white.png') }}" alt="Logo" class="logo">
+            </div>
+        </div>
+    </div>
     <div class="container-fluid py-3" style="background-color: rgba(0,0,0,0.7);">
         <div class="row">
             <div class="col-md-4">
-                <img src="{{ asset('/images/funstore-white.png') }}" alt="Logo" class="logo">
                 <ul class="list-group">
                     <li class="list-group-item">Cras justo odio</li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>
