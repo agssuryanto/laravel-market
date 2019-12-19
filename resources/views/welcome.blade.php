@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="{{ asset('/fontawesome/css/fontawesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('/fontawesome/css/brands.css') }}" rel="stylesheet">
+    <link href="{{ asset('/fontawesome/css/solid.css') }}" rel="stylesheet">    
     <link rel="stylesheet" href="{{ asset('/owlcarousel/dist/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/owlcarousel/dist/assets/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/marketstyle.css?v=1.0') }}">
@@ -59,7 +62,12 @@
     </nav>
     
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <ion-icon name="cart"></ion-icon>&nbsp;Mau belanja?&nbsp;<font size="2px"><font weight="bold"><strong><a href="#">Masuk aja dulu</a></strong></font></font>
+        <div class="d-flex row">
+            <span style="display: flex; align-items: center; justify-content: center; font-size: 28px; color: green;">
+                <i class="fas fa-shopping-cart"></i>
+                <font size="2px">&nbsp;Mau belanja murah ?&nbsp;<a href="#">Masuk aja dulu</a></strong></font>
+            </span>            
+        </div>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
