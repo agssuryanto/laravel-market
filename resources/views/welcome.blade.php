@@ -71,13 +71,6 @@
         </button>
     </div>
 
-    {{-- <div class="alert alert-success alert-dismissible fade show" role="alert">
-        Mau belanja?&nbsp;<font size="2px"><font weight="bold"><strong><a href="#">Masuk aja dulu</a></strong></font></font>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div> --}}
-
     <div class="container mt-5 pt-5">
         <div class="slider owl-carousel owl-theme">
             <div><img src="{{ asset('/images/slider/slide1.jpg') }}"></div>
