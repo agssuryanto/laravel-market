@@ -235,6 +235,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid py-3" style="background-color: rgba(0,0,0,0.7);">
         <div class="row">
             <div class="col-md-4">
@@ -300,7 +301,7 @@
             $('.category').owlCarousel({
                 items:4,
                 loop:true,
-                autoplay: true,
+                autoplay: false,
                 nav: true,
                 navText: ['<ion-icon name="arrow-dropleft"></ion-icon>','<ion-icon name="arrow-dropright"></ion-icon>'],
                 dots: false,

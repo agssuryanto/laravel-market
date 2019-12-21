@@ -58,7 +58,7 @@ button#button-addon2 {
 }
 
 .navbar-search {
-    max-width: 500px !important;
+    max-width: 300px !important;
 }
 
 .slider .owl-prev {
@@ -164,7 +164,15 @@ li.nav-item > a.nav-link:hover {
 }
 
 @media (min-width: 768px) { 
-    /* */
+    /* */    
+}
+
+@media (max-width: 992px) {
+
+    li.nav-item.dropdown {
+        display: none;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -183,4 +191,10 @@ li.nav-item > a.nav-link:hover {
 
 }
 
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+
+    .navbar-search {
+        max-width: 500px !important;
+    }
+
+ }
