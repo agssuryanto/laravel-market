@@ -159,6 +159,26 @@ li.nav-item > a.nav-link:hover {
     background-color: white;
 }
 
+#product > a.nav-link {
+    padding: 10px;
+    margin: 10px;
+    color: white !important;
+    font-size: 14px !important;
+    font-family: 'Arial';
+    font-weight: bold !important;
+    border: none;
+}
+
+#product > a.nav-link.active {
+    border-bottom: none !important;
+}
+
+li#product.nav-item > a.nav-link:hover {
+    border-radius: none !important;
+    border-bottom: none !important;
+}
+
+
 @media (min-width: 576px) { 
     /* */
 }

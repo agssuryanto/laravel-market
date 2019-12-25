@@ -226,6 +226,44 @@
         </div>
     </div>
 
+    <!-- PRODUCT TERBARU -->
+    {{-- <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h6>Product Terbaru</h6>
+            </div>
+        </div>
+    </div> --}}
+    <!-- PRODUCT TERBARU -->
+
+    <!-- PRODUCT TERLARIS -->
+    {{-- <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h6>Product Terlaris</h6>
+            </div>
+        </div>
+    </div> --}}
+    <!-- PRODUCT TERLARIS -->
+
+    <!-- PRODUCT -->
+    <div class="container">
+        <ul class="nav nav-pills nav-fill">
+            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(152,5,5,1) 30%, rgba(245,71,71,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
+                <a class="nav-link active" href="#">Product Terbaru</a>
+            </li>
+            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(152,128,5,1) 30%, rgba(245,226,71,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
+                <a class="nav-link" href="#">Product Terlaris</a>
+            </li>
+            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(5,152,78,1) 30%, rgba(20,196,41,1) 100%, rgba(71,245,83,1) 100%); border-radius: 5px;">
+                <a class="nav-link" href="#">Product Discount</a>
+            </li>
+            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(39,5,152,1) 30%, rgba(71,203,245,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
+                <a class="nav-link" href="#">Product MurMer</a>
+            </li>            
+        </ul>
+    </div>
+    <!-- PRODUCT -->
 
     <!-- FOOTER -->
     <div class="container">
