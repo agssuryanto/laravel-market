@@ -155,7 +155,13 @@
                                     </div>
                                     <div class="form-group mx-2">
                                         <label for="nominal">Nominal</label>
-                                        <input type="text" class="form-control" id="nominal" placeholder="nominal">
+                                        <select class="form-control" id="nominal" name="nominal">
+                                            <option value="10000">Rp 10.000</option>
+                                            <option value="20000">Rp 20.000</option>
+                                            <option value="25000">Rp 25.000</option>
+                                            <option value="50000">Rp 50.000</option>
+                                            <option value="100000">Rp 100.000</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <br />
@@ -175,7 +181,13 @@
                                     </div>
                                     <div class="form-group mx-2">
                                         <label for="nominal">Nominal</label>
-                                        <input type="text" class="form-control" id="nominaldata" placeholder="nominal">
+                                        <select class="form-control" id="nominaldata" name="nominaldata">
+                                            <option value="10000">Rp 10.000</option>
+                                            <option value="20000">Rp 20.000</option>
+                                            <option value="25000">Rp 25.000</option>
+                                            <option value="50000">Rp 50.000</option>
+                                            <option value="100000">Rp 100.000</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <br />
@@ -214,7 +226,6 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <br />
                                         <button type="submit" class="btn btn-primary mt-2">Submit</button>
                                     </div>                                    
                                 </div>
@@ -227,37 +238,6 @@
     </div>
 
     <!-- PRODUCT -->
-    <!-- <div class="container">
-        <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
-            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(152,5,5,1) 30%, rgba(245,71,71,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
-                <a class="nav-link active" data-toggle="pill" href="pills-terbaru">Product Terbaru</a>
-            </li>
-            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(152,128,5,1) 30%, rgba(245,226,71,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
-                <a class="nav-link" data-toggle="pill" href="pills-terlaris">Product Terlaris</a>
-            </li>
-            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(5,152,78,1) 30%, rgba(20,196,41,1) 100%, rgba(71,245,83,1) 100%); border-radius: 5px;">
-                <a class="nav-link" data-toggle="pill" href="pills-discount">Product Discount</a>
-            </li>
-            <li id="product" class="nav-item mx-1" style="background: linear-gradient(90deg, rgba(39,5,152,1) 30%, rgba(71,203,245,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
-                <a class="nav-link" data-toggle="pill" href="pills-murmer">Product MurMer</a>
-            </li>            
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-terbaru" role="tabpanel" aria-labelledby="pills-home-tab">
-                <h6>Terbaru</h6>                
-            </div>
-            <div class="tab-pane fade" id="pills-terlaris" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <h6>Terlaris</h6>
-            </div>
-            <div class="tab-pane fade" id="pills-discount" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <h6>Discount</h6>
-            </div>
-            <div class="tab-pane fade" id="pills-murmer" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <h6>Murah Meriah</h6>
-            </div>
-        </div>        
-    </div> -->
-
     <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li id="product" class="nav-item mx-1 my-1" style="background: linear-gradient(90deg, rgba(152,5,5,1) 30%, rgba(245,71,71,1) 100%, rgba(196,20,142,1) 100%); border-radius: 5px;">
