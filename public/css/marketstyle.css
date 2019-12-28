@@ -158,6 +158,30 @@ li.nav-item > a.nav-link:hover {
     background-color: white;
 }
 
+li#product {
+    min-width: 20vw !important;
+    max-width: 20vw !important;
+}
+
+#product {
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+}
+
+#product::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #FFF;
+    transition: width .3s;
+}
+
+#product:hover::after {
+    width: 100%;
+}
+
 #product > a.nav-link {
     padding: 10px;
     margin: 10px;
